@@ -13,6 +13,7 @@
 
       <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
       <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+      <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
 
       </head>
 
@@ -36,7 +37,8 @@
            -->
                 <h3>Hardware</h3>
                   <a data-role="button" href="processors.html">Processors</a>
-                  <a data-role="button" href="docks.html">Docks</a>
+                  <a data-role="button" href="arduino.html">Arduino</a>
+		  <a data-role="button" href="pi.html">Raspberry Pi</a>
                   <a data-role="button" href="tabs.html">Interface Boards</a>
            <!-- 
                   <a data-role="button" >Processors</a>
@@ -85,7 +87,7 @@
 		   to the Arduino to see the Analog value on the Serial Port. I did some slight modifications to remove the translation
 		   so that it outputs only the exact ADC value that it finds on the port.</p>
 		<p>Here's the code:</p>   
-<pre><code>
+<pre><code class="prettyprint">
 void loop() {
   // read the analog in value:
   sensorValue = analogRead(analogInPin);            
@@ -119,7 +121,7 @@ void loop() {
 		<p>The Arduino Forum has a great post <a href="http://forum.arduino.cc/index.php/topic,37544.0.html" rel="external" target="_blank">Library for LM335A Temperature Sensor</a>
 		   and I downloaded that. Here is a snippet of the program where the majority of the work is done:</p>
 		
-<pre><code>
+<pre><code class="prettyprint">
 void setup() {
   LM335A InsideTemp(0); //pass the analog input pin number
   void setup() {
